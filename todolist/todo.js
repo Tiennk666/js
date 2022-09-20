@@ -23,7 +23,7 @@ add_items.onclick  = function(){
     var new_items = document.getElementById('add_items').value;
     if (new_items != '') {
         var html = '<div class="items"><input type="checkbox" name="name_items" value="' + new_items + '" />' + new_items + '</div>';
-        document.getElementById('list_items').insertAdjacentHTML('afterend', html);
+        document.getElementById('list_items').insertAdjacentHTML('beforeend', html);
         document.getElementById('add_items').value = "";
     }
     change();
